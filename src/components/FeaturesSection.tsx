@@ -1,51 +1,119 @@
-import { Recycle, Home, Tag, Tags } from "lucide-react";
-import { useTranslations } from "next-intl";
+// components/ServicesSection.jsx
+import Image from "next/image";
+import SubTitle from "@assets/subTitle.svg";
+import Back from "@assets/Background1.svg";
+import OrangeFee from "@assets/OrangeFee.svg";
+import FreeShip from "@assets/free shipping.svg";
+import Bread from "@assets/Bread.svg";
+import Mony from "@assets/money back.svg";
+import Broccoli from "@assets/broccoli.svg";
+import Policy from "@assets/return policy.svg";
+import WaterMalon from "@assets/watermelon55.svg";
+import ContactU from "@assets/contact us.svg";
+import Food from "@assets/Food.svg";
 
-export default function FeaturesSection() {
-  const translation = useTranslations("FeaturesSection");
-
-  const features = [
-    {
-      name: translation("productForm"),
-      description: translation("organicFarm"),
-      icon: Recycle,
-    },
-    {
-      name: translation("freeHome"),
-      description: translation("delivery"),
-      icon: Home,
-    },
-    {
-      name: translation("promotionsOf"),
-      description: translation("theWeek"),
-      icon: Tag,
-    },
-    {
-      name: translation("discount"),
-      description: translation("onAllVegetables"),
-      icon: Tags,
-    },
-  ];
+const ServiceCard = ({ iconSrc, bgSrc, title, description }) => {
   return (
-    <div className="flex  flex-col sm:flex-row justify-between gap-y-5 ">
-      {features.map((feature, index) => (
-        <div
-          key={feature.name}
-          className="flex items-center gap-x-4 w-fit"
-          data-aos="fade-up"
-          data-aos-duration={500 * index}
-        >
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#f7f6f2]">
-            <feature.icon className="h-8 w-8 text-primary" aria-hidden="true" />
-          </div>
-          <div>
-            <h3 className="text-base font-semibold text-[#535353]">
-              {feature.name}
-            </h3>
-            <p className="mt-1 text-sm text-gray-400">{feature.description}</p>
-          </div>
+    <div className="flex flex-col items-center text-center">
+      <div className="relative w-32 h-32 mb-4">
+        {/* Background circle image */}
+        <Image src={bgSrc} alt="background" fill className="object-contain" />
+        {/* Icon image */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Image
+            src={iconSrc}
+            alt={title}
+            width={40}
+            height={40}
+            className="object-contain"
+          />
         </div>
-      ))}
+      </div>
+      <h3 className="text-lg font-bold mb-2">{title}</h3>
+      <p className="text-sm text-gray-600">{description}</p>
     </div>
   );
-}
+};
+
+const ServicesSection = () => {
+  const services = [
+    {
+      iconSrc: Bread,
+      bgSrc: FreeShip,
+      title: "Always Fresh",
+      description: "We care about what you eatant to produce food which nshes.",
+    },
+    {
+      iconSrc: Broccoli,
+      bgSrc: Mony,
+      title: "100% Natural",
+      description: "We care about what you eatant to produce food which nshes.",
+    },
+    {
+      iconSrc: WaterMalon,
+      bgSrc: Policy,
+      title: "Best Quality",
+      description: "We care about what you eatant to produce food which nshes.",
+    },
+    {
+      iconSrc: Food,
+      bgSrc: ContactU,
+      title: "Food Safety",
+      description: "We care about what you eatant to produce food which nshes.",
+    },
+  ];
+
+  return (
+    <section className="relative py-16 px-4 overflow-hidden">
+      {/* Background pattern image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={Back}
+          alt="Background pattern"
+          fill
+          className="object-cover "
+        />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto">
+        {/* Section Title */}
+        <div className="text-center mb-16">
+          <h2 className="text-green-600 text-2xl font-medium mb-2">Services</h2>
+          <h1 className="text-3xl md:text-4xl font-bold">
+            Welcome To Organici
+          </h1>
+          <div className="flex justify-center mt-4">
+            <Image src={SubTitle} alt="divider" width={60} height={160} />
+          </div>
+        </div>
+
+        {/* Service Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              iconSrc={service.iconSrc}
+              bgSrc={service.bgSrc}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </div>
+
+        {/* Citrus Image */}
+        <div className="mt-20 flex justify-center">
+          <Image
+            src={OrangeFee}
+            alt="Organic Citrus Fruits"
+            width={600}
+            height={300}
+            className="object-contain"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesSection;

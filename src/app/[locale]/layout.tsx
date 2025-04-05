@@ -34,7 +34,7 @@ const philosopher = Philosopher({
 // });
 
 export const metadata: Metadata = {
-  title: "Palm Gate",
+  title: "Royal Gate",
   description:
     "Royal Export is a leading provider of logistics solutions for businesses",
 };
