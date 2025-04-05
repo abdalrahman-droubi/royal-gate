@@ -1,0 +1,96 @@
+{
+  "Navbar": {
+    "Home": "Home",
+    "About Us": "About Us",
+    "Products": "Products",
+    "Contact Us": "Contact Us",
+    "Gallery": "Gallery"
+  },
+  "Hero": {
+    "organicLabel": "100% ORGANIC",
+    "title": "Organic Fruits  ",
+    "description": "Fresh, organic fruits and vegetables sourced from nature. Experience the goodness of healthy, sustainable produce for a vibrant, nourishing lifestyle. From farm to table, our selection is carefully chosen to provide the freshest, most natural options.",
+    "buttonText": "Read More",
+    "h": "h",
+    "e": "e",
+    "a": "a",
+    "l": "l",
+    "t": "t",
+    "y": "y"
+  },
+  "FeaturesSection": {
+    "productForm": "Product Form",
+    "organicFarm": "Organic Farm",
+    "freeHome": "Free Home",
+    "delivery": "Delivery",
+    "promotionsOf": "Promotions Of",
+    "theWeek": "The week",
+    "discount": " discount",
+    "onAllVegetables": "On All Vegetables"
+  },
+  "AboutUs": {
+    "T1": "About Us",
+    "title": "Experience the Purity of Organic Freshness",
+    "subtitle": "Straight from Nature to Your Table",
+    "subParagraph": "Cultivated with care, rooted in sustainable farming practices",
+    "paragraph": "Our mission is to provide you with the freshest organic produce, grown naturally and delivered with care to ensure quality and taste in every bite. We pride ourselves on our ability to serve customers worldwide.",
+    "extraTitle": "Dedicated to Excellence",
+    "extraParagraph": "We are committed to ethical farming, ensuring every product is grown with respect for nature and handled with the utmost care to meet the highest organic standards."
+  },
+  "Trending": {
+    "title": "Trending",
+    "Productss": "Our Featured Products",
+    "packedWithNutrients": "Packed with nutrients",
+    "buildsNaturalDefenses": "Builds natural defenses",
+    "supportsEcoFarming": "Supports eco-farming"
+  },
+  "FoodCategories": {
+    "Vegetable": "Vegetables",
+    "Fresh Fruit": "Fresh Fruit"
+  },
+  "products": {
+    "title": "Fresh & Organic",
+    "Productss": "Our Product ",
+    "orange": "Orange",
+    "lemon": "cucumber",
+    "mango": "Mango",
+    "strawberry": "Strawberry",
+    "pomegranate": "Pomegranate",
+    "tangerine": "Tangerine",
+    "banana": "Banana",
+    "grapes": "Grapes",
+    "peach": "Peach",
+    "apricot": "Apricot",
+    "tomato": "Tomato",
+    "garlic": "Lettuce",
+    "onion": "Onion",
+    "eggplant": "Avocado",
+    "watermelon": "Watermelon",
+    "melon": "Melon",
+    "guava": "Guava"
+  },
+  "Gallery": {
+    "gallery": "Gallery"
+  },
+  "Organic": {
+    "slogan": "FRESH FROM NATURE. STRAIGHT TO YOU.",
+    "title": "Organic Produce for a Healthier Lifestyle",
+    "highlight": "Fresh ",
+    "description": "Experience the finest selection of organic fruits and vegetables. Carefully sourced to ensure quality, sustainability, and taste, our products help you live a healthier and more vibrant life.",
+    "buttonText": "Explore Now"
+  },
+  "ContactUs": {
+    "GitIn": "Get In Touch",
+    "contactUs": "Contact Us",
+    "EmailAddress": "Email Address",
+    "PhoneNumber": "Phone Number",
+    "OfficeAddress": "Company Address",
+    "writeToUs": "WRITE TO US",
+    "visitUs": "VISIT US",
+    "callUs": "CALL US",
+    "detail": "Amman, Khalda"
+  },
+  "Footer": {
+    "AllRightsReserved": "All Rights Reserved"
+  }
+}
