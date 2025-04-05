@@ -1,5 +1,5 @@
-// components/ServicesSection.jsx
-import Image from "next/image";
+// components/ServicesSection.tsx
+import Image, { StaticImageData } from "next/image";
 import SubTitle from "@assets/subTitle.svg";
 import Back from "@assets/Background1.svg";
 import OrangeFee from "@assets/OrangeFee.svg";
@@ -12,7 +12,21 @@ import WaterMalon from "@assets/watermelon55.svg";
 import ContactU from "@assets/contact us.svg";
 import Food from "@assets/Food.svg";
 
-const ServiceCard = ({ iconSrc, bgSrc, title, description }) => {
+// Define prop types for the ServiceCard
+type ServiceCardProps = {
+  iconSrc: StaticImageData;
+  bgSrc: StaticImageData;
+  title: string;
+  description: string;
+};
+
+// ServiceCard component with types
+const ServiceCard = ({
+  iconSrc,
+  bgSrc,
+  title,
+  description,
+}: ServiceCardProps) => {
   return (
     <div className="flex flex-col items-center text-center">
       <div className="relative w-32 h-32 mb-4">
@@ -35,8 +49,17 @@ const ServiceCard = ({ iconSrc, bgSrc, title, description }) => {
   );
 };
 
+// Define service item type
+type Service = {
+  iconSrc: StaticImageData;
+  bgSrc: StaticImageData;
+  title: string;
+  description: string;
+};
+
+// ServicesSection component
 const ServicesSection = () => {
-  const services = [
+  const services: Service[] = [
     {
       iconSrc: Bread,
       bgSrc: FreeShip,
@@ -71,7 +94,7 @@ const ServicesSection = () => {
           src={Back}
           alt="Background pattern"
           fill
-          className="object-cover "
+          className="object-cover"
         />
       </div>
 
