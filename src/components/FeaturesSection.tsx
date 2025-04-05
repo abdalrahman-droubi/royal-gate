@@ -107,7 +107,7 @@ const ServicesSection = () => {
             Welcome To Organici
           </h1>
           <div className="flex justify-center mt-4">
-            <Image src={SubTitle} alt="divider" width={60} height={160} />
+            <Image src={SubTitle} alt="divider" width={60} height={60} />
           </div>
         </div>
 
@@ -125,14 +125,16 @@ const ServicesSection = () => {
         </div>
 
         {/* Citrus Image */}
-        <div className="mt-20 flex justify-center">
-          <Image
-            src={OrangeFee}
-            alt="Organic Citrus Fruits"
-            width={600}
-            height={300}
-            className="object-contain"
-          />
+        <div className="relative mt-[-60px] z-20 pt-20 pb-10">
+          <div className="flex justify-center">
+            <Image
+              src={OrangeFee}
+              alt="Organic Citrus Fruits"
+              width={400}
+              height={300}
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>
