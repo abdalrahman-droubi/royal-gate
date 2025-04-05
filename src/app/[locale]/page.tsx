@@ -38,9 +38,9 @@ export default function Home({
 
   return (
     <>
-      <section className="container-main">
-        <Navbar />
-      </section>
+      {/* <section className="container-main"> */}
+      <Navbar />
+      {/* </section> */}
 
       {isLoading ? (
         <div className="mt-28 h-[600px]">
@@ -56,12 +56,12 @@ export default function Home({
           <section id="home">
             <Hero locale={params.locale} />
           </section>
+          <FeaturesSection />
+
           <section
             id="features"
             className="scroll-mt-20 container-main spacing-y-main"
-          >
-            <FeaturesSection />
-          </section>
+          ></section>
           <section id="about" className="scroll-mt-20 container-main">
             <AboutUs />
           </section>

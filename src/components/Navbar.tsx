@@ -23,83 +23,68 @@ const Navbar = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-  // Dynamically update the height of the mobile menu for smooth transitions
   useEffect(() => {
     if (menuRef.current) {
-      if (isMenuOpen) {
-        setMenuHeight(`${menuRef.current.scrollHeight}px`);
-      } else {
-        setMenuHeight("0px");
-      }
+      setMenuHeight(isMenuOpen ? `${menuRef.current.scrollHeight}px` : "0px");
     }
   }, [isMenuOpen]);
 
   const handleScroll = (sectionId: string) => {
-    // Close mobile menu if open
     setIsMenuOpen(false);
-
-    // If we're not on the home page, navigate to home first
     if (pathname !== "/") {
       router.push("/");
-      // Wait for navigation to complete before scrolling
       setTimeout(() => {
         const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
+        if (element) element.scrollIntoView({ behavior: "smooth" });
       }, 100);
       return;
     }
-
-    // If we're already on home page, just scroll
     const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <nav className="relative z-30">
-      <div className="flex items-center justify-between">
-        {/* Align the logo and the rest of the navbar content in a centered container */}
-        <div className="container mx-auto flex items-center justify-between w-full pb-2">
-          <div>
-            <Image
-              src={logo}
-              alt="bayareq alkhadraa"
-              className="w-[200px] h-[150px]"
-            />
+    <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-4 sm:px-6 py-4">
+      <div className="bg-white rounded shadow-md px-6 py-10">
+        <div className="relative flex items-center justify-center">
+          {/* Logo - Left */}
+          <div className="absolute left-0 py-2">
+            <Image src={logo} alt="Logo" className="w-40 h-40 object-contain" />
           </div>
 
-          <ul className="hidden md:flex items-center gap-10">
-            {links.map(({ href, label }) => (
-              <li key={`${href}${label}`}>
-                <button
-                  onClick={() => handleScroll(href)}
-                  className="font-medium text-xl cursor-pointer"
-                >
-                  {translation(label as any)}
-                </button>
-              </li>
-            ))}
-          </ul>
+          {/* Desktop Navigation - Center */}
+          <div className="hidden md:flex items-center">
+            <ul className="flex items-center space-x-8">
+              {links.map(({ href, label }) => (
+                <li key={`${href}${label}`}>
+                  <button
+                    onClick={() => handleScroll(href)}
+                    className="font-medium text-base text-gray-800 hover:text-gray-600 transition-colors"
+                  >
+                    {translation(label as any)}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          <div className="hidden md:flex items-center gap-3">
+          {/* Language Selector - Right */}
+          <div className="absolute right-0 hidden md:flex items-center gap-2 text-gray-800">
             {locale === "en" ? (
-              <a href="/ar">
+              <a href="/ar" className="hover:text-gray-600 transition-colors">
                 <p>العربية</p>
               </a>
             ) : (
-              <a href="/en">
+              <a href="/en" className="hover:text-gray-600 transition-colors">
                 <p>English</p>
               </a>
             )}
-            <Globe size={20} />
+            <Globe size={18} />
           </div>
 
-          {/* Toggle button for mobile menu */}
+          {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden"
+            className="md:hidden absolute right-0 text-gray-800"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -108,7 +93,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu with transition */}
+      {/* Mobile Menu */}
       <div
         ref={menuRef}
         style={{
@@ -117,22 +102,24 @@ const Navbar = () => {
           opacity: isMenuOpen ? 1 : 0,
           overflow: "hidden",
         }}
-        className={`absolute top-full left-0 right-0 bg-white shadow-lg md:hidden`}
+        className="absolute top-full left-0 right-0 bg-white shadow-lg md:hidden rounded-b-md"
       >
         <ul className="flex flex-col p-4">
           {links.map(({ href, label }) => (
-            <li key={`mobile-${href}${label}`} className="py-2">
+            <li
+              key={`mobile-${href}${label}`}
+              className="py-2 border-b border-gray-100"
+            >
               <button
                 onClick={() => handleScroll(href)}
-                className="font-medium text-lg block w-full text-left"
+                className="font-medium text-base text-gray-800 block w-full text-left"
               >
                 {translation(label as any)}
               </button>
             </li>
           ))}
-
-          <li className="py-2 mt-2 border-t">
-            <div className="flex items-center gap-2">
+          <li className="py-3 mt-1">
+            <div className="flex items-center gap-2 text-gray-800">
               {locale === "en" ? (
                 <a href="/ar" onClick={() => setIsMenuOpen(false)}>
                   <p>العربية</p>
@@ -142,7 +129,7 @@ const Navbar = () => {
                   <p>English</p>
                 </a>
               )}
-              <Globe size={20} />
+              <Globe size={18} />
             </div>
           </li>
         </ul>
