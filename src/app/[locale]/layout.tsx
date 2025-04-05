@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Zain, Kalam, Merriweather, Roboto } from "next/font/google";
+import {
+  Zain,
+  Kalam,
+  Merriweather,
+  Roboto,
+  Philosopher,
+} from "next/font/google";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "../globals.css";
@@ -9,19 +15,23 @@ const zain = Zain({
   subsets: ["latin"],
   weight: ["200", "300", "400", "700", "900"],
 });
+const philosopher = Philosopher({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
-const kalam = Kalam({
-  subsets: ["latin"],
-  weight: ["400", "300", "700"],
-});
-const merriweather = Merriweather({
-  subsets: ["latin"],
-  weight: ["400", "300", "700"],
-});
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "300", "100", "700", "900", "500"],
-});
+// const merriweather = Merriweather({
+//   subsets: ["latin"],
+//   weight: ["400", "300", "700"],
+// });
+// const kalam = Kalam({
+//   subsets: ["latin"],
+//   weight: ["400", "300", "700"],
+// });
+// const roboto = Roboto({
+//   subsets: ["latin"],
+//   weight: ["400", "300", "100", "700", "900", "500"],
+// });
 
 export const metadata: Metadata = {
   title: "Palm Gate",
@@ -42,7 +52,7 @@ export default async function RootLayout({
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body
         className={`${
-          locale === "ar" ? zain.className : merriweather.className
+          locale === "ar" ? zain.className : philosopher.className
         }`}
       >
         <NextIntlClientProvider messages={messages}>
