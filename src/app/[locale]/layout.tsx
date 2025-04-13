@@ -36,7 +36,7 @@ const philosopher = Philosopher({
 export const metadata: Metadata = {
   title: "Royal Gate",
   description:
-    "Royal Export is a leading provider of logistics solutions for businesses",
+    "Royal Gate is a leading provider of logistics solutions for businesses",
 };
 
 export default async function RootLayout({

@@ -11,16 +11,16 @@ export const AboutUs = () => {
     <>
       {" "}
       <div className="text-center mb-12">
-        <div className="flex items-center justify-center gap-2 text-[#6AA800]">
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <p className="text-sm text-[#6AA800] tracking-widest uppercase">
+        <div className="flex items-center justify-center gap-2 text-[#286485]">
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <p className="text-sm text-[#286485] tracking-widest uppercase">
             {translation("subtitle")}
           </p>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
         </div>
 
         <h2 className="text-3xl font-bold text-gray-800">
@@ -58,10 +58,10 @@ export const AboutUs = () => {
           data-aos="fade-up"
           data-aos-duration={"2500"}
         >
-          <div className="flex items-center gap-2 text-[#6AA800]">
-            <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-            <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-            <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
+          <div className="flex items-center gap-2 text-[#286485]">
+            <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+            <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+            <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
 
             <p className="text-sm uppercase">{translation("subtitle")}</p>
           </div>
@@ -71,7 +71,7 @@ export const AboutUs = () => {
           <p className="mt-4 italic text-lg text-gray-500">
             {translation("subParagraph")}
           </p>
-          <p className="mt-4 text-gray-700 border-l-4 border-[#6AA800] pl-4">
+          <p className="mt-4 text-gray-700 border-l-4 border-[#286485] pl-4">
             {translation("paragraph")}
           </p>
           <h3 className="text-2xl md:text-3xl font-semibold leading-tight mt-6">

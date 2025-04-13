@@ -51,16 +51,16 @@ const Gallery = () => {
   return (
     <section className="gallery-section py-8 spacing-y-main container-main">
       <div className="text-center mb-12">
-        <div className="flex items-center justify-center gap-2 text-[#6AA800]">
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <p className="text-sm text-[#6AA800] tracking-widest uppercase">
+        <div className="flex items-center justify-center gap-2 text-[#286485]">
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <p className="text-sm text-[#286485] tracking-widest uppercase">
             {t("products.title")}
           </p>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#6AA800] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
+          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
         </div>
 
         <h2 className="text-3xl font-bold text-gray-800">
