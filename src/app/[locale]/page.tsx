@@ -71,7 +71,7 @@ export default function Home({
           <section className="scroll-mt-20">
             <Organic />
           </section>
-          <section id="gallery" className="scroll-mt-20">
+          <section id="gallery" className="scroll-mt-20 container-main">
             <Gallery />
           </section>
 
