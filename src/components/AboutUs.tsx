@@ -35,21 +35,21 @@ export const AboutUs = () => {
             <Link href="#contact">{translation("contact")}</Link>
           </button>
         </div>
-        <div className="md:hidden absolute inset-0  -z-10 w-full h-full  ">
+        <div className="md:hidden absolute inset-0 -z-10 w-full h-full rounded-xl overflow-hidden">
           <Image
             src={aboutRight}
             alt="about-right"
-            className="w-full h-full"
+            className="w-full h-full object-cover"
             layout="fill"
           />
         </div>
         <div className="md:hidden absolute inset-0 bg-black bg-opacity-50 rounded-xl -z-10 w-full h-full  " />
       </div>
-      <div className="relative hidden md:block w-[40%] h-[400px]">
+      <div className="relative hidden md:block w-[40%] h-[400px] rounded-xl overflow-hidden">
         <Image
           src={aboutRight}
           alt="about-right"
-          className="w-full h-full"
+          className="w-full h-full object-cover"
           layout="fill"
         />
       </div>
@@ -58,7 +58,7 @@ export const AboutUs = () => {
 };
 
 const Icon = ({ number }: { number: number }) => (
-  <div className="flex items-center justify-center bg-black text-white rounded-full py-2 px-4 me-4">
+  <div className="flex items-center justify-center bg-secondary text-white rounded-full py-2 px-4 me-4">
     {number}
   </div>
 );

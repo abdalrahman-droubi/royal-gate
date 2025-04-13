@@ -4,7 +4,7 @@ import { Egg, Drumstick, Leaf, HeartPulse } from "lucide-react";
 
 export default function NutrioProgramme() {
   return (
-    <section className="bg-blue-700 py-16 relative">
+    <section className="bg-primary py-16 relative">
       {/* Leaf decoration */}
       <div className="absolute top-0 right-1/3 opacity-20">
         <svg
@@ -32,95 +32,75 @@ export default function NutrioProgramme() {
           {/* Left column */}
           <div className="space-y-16">
             {/* Item 1 */}
-            <div className="text-right pr-12 md:pr-16">
-              <h3 className="text-xl font-bold text-white mb-2">
-                Keeps Healthy Record
-              </h3>
-              <p className="text-blue-100 text-sm">
-                Sed vestibulum nulla elementum auctor tincidunt. Aliquam sit
-                amet cursus mauris. Sed vitae mattis ipsum. Vestibulum enim
-                nulla, sollicitudin ac hendrerit tempore.
-              </p>
+            <div className="flex flex-row-reverse items-start pr-12 md:pr-16 gap-4 text-right">
+              <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center shrink-0">
+                <HeartPulse className="text-primary" size={28} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Keeps Healthy Record
+                </h3>
+                <p className="text-blue-100 text-sm">
+                  Sed vestibulum nulla elementum auctor tincidunt. Aliquam sit
+                  amet cursus mauris. Sed vitae mattis ipsum. Vestibulum enim
+                  nulla, sollicitudin ac hendrerit tempore.
+                </p>
+              </div>
             </div>
 
             {/* Item 3 */}
-            <div className="text-right pr-12 md:pr-16 mt-24 pt-8">
-              <h3 className="text-xl font-bold text-white mb-2">
-                Eggs Make you Fit
-              </h3>
-              <p className="text-blue-100 text-sm">
-                Sed vestibulum nulla elementum auctor tincidunt. Aliquam sit
-                amet cursus mauris. Sed vitae mattis ipsum. Vestibulum enim
-                nulla, sollicitudin ac hendrerit tempore.
-              </p>
+            <div className="flex flex-row-reverse items-start pr-12 md:pr-16 gap-4 text-right">
+              <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center shrink-0">
+                <Egg className="text-primary" size={28} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Eggs Make you Fit
+                </h3>
+                <p className="text-blue-100 text-sm">
+                  Sed vestibulum nulla elementum auctor tincidunt. Aliquam sit
+                  amet cursus mauris. Sed vitae mattis ipsum. Vestibulum enim
+                  nulla, sollicitudin ac hendrerit tempore.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Right column */}
           <div className="space-y-16">
             {/* Item 2 */}
-            <div className="text-left pl-12 md:pl-16">
-              <h3 className="text-xl font-bold text-white mb-2">
-                Meats Reduces Fat
-              </h3>
-              <p className="text-blue-100 text-sm">
-                Aenean leo ligula porttitor eu consequat vitae eleifend ac enim.
-                Aliquam lorem ante dapibus in viverra quis feugiat a tellus.
-                Phasellus viverra nulla ut metus varius laoreet.
-              </p>
+            <div className="flex items-start pl-12 md:pl-16 gap-4 text-left">
+              <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center shrink-0">
+                <Drumstick className="text-primary" size={28} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Meats Reduces Fat
+                </h3>
+                <p className="text-blue-100 text-sm">
+                  Aenean leo ligula porttitor eu consequat vitae eleifend ac
+                  enim. Aliquam lorem ante dapibus in viverra quis feugiat a
+                  tellus. Phasellus viverra nulla ut metus varius laoreet.
+                </p>
+              </div>
             </div>
 
             {/* Item 4 */}
-            <div className="text-left pl-12 md:pl-16 mt-24 pt-8">
-              <h3 className="text-xl font-bold text-white mb-2">
-                Pure Green Vegetables
-              </h3>
-              <p className="text-blue-100 text-sm">
-                Donec vitae sapien ut libero venenatis faucibus. Nullam quis
-                ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
-                leo. Sed fringilla mauris sit amet nibh.
-              </p>
+            <div className="flex items-start pl-12 md:pl-16 gap-4 text-left">
+              <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center shrink-0">
+                <Leaf className="text-primary" size={28} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  Pure Green Vegetables
+                </h3>
+                <p className="text-blue-100 text-sm">
+                  Donec vitae sapien ut libero venenatis faucibus. Nullam quis
+                  ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+                  leo. Sed fringilla mauris sit amet nibh.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        {/* Center icons - positioned absolutely to be exactly in the center */}
-        <div className="hidden md:block absolute left-1/2 top-0 transform -translate-x-1/2 h-full">
-          <div className="flex flex-col justify-between h-full py-6">
-            <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center">
-              <HeartPulse className="text-blue-700" size={28} />
-            </div>
-
-            <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center">
-              <Drumstick className="text-blue-700" size={28} />
-            </div>
-
-            <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center">
-              <Egg className="text-blue-700" size={28} />
-            </div>
-
-            <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center">
-              <Leaf className="text-blue-700" size={28} />
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile icons (only visible on small screens) */}
-        <div className="md:hidden flex flex-wrap justify-center gap-8 mt-8">
-          <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center">
-            <HeartPulse className="text-blue-700" size={28} />
-          </div>
-
-          <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center">
-            <Drumstick className="text-blue-700" size={28} />
-          </div>
-
-          <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center">
-            <Egg className="text-blue-700" size={28} />
-          </div>
-
-          <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center">
-            <Leaf className="text-blue-700" size={28} />
           </div>
         </div>
       </div>
