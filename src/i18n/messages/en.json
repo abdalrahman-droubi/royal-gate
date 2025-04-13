@@ -92,5 +92,27 @@
   },
   "Footer": {
     "AllRightsReserved": "All Rights Reserved"
+  },
+  "Services": {
+    "sectionSubtitle": "Services",
+    "sectionTitle": "Welcome To Royal Gate",
+    "services": [
+      {
+        "title": "Always Fresh",
+        "description": "We care about what you eat and want to produce food which nourishes."
+      },
+      {
+        "title": "100% Natural",
+        "description": "All our products are completely natural with no additives."
+      },
+      {
+        "title": "Best Quality",
+        "description": "We maintain the highest quality standards in all our products."
+      },
+      {
+        "title": "Food Safety",
+        "description": "Your safety is our priority in every step of production."
+      }
+    ]
   }
 }
