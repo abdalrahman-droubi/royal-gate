@@ -73,11 +73,18 @@
     "gallery": "Gallery"
   },
   "Organic": {
-    "slogan": "FRESH FROM NATURE. STRAIGHT TO YOU.",
-    "title": "Organic Produce for a Healthier Lifestyle",
-    "highlight": "Fresh ",
-    "description": "Experience the finest selection of organic fruits and vegetables. Carefully sourced to ensure quality, sustainability, and taste, our products help you live a healthier and more vibrant life.",
-    "buttonText": "Explore Now"
+    "Title": "Why Choose Our Fresh Produce",
+    "Subtitle": "Packed with nature’s best nutrients for a healthy lifestyle",
+    "Items": {
+      "FruitTitle": "Fresh Organic Fruits",
+      "FruitDesc": "Enjoy the sweetness of nature with our hand-picked organic fruits, full of vitamins and antioxidants to boost your immunity.",
+      "GrapeTitle": "Naturally Sweet Grapes",
+      "GrapeDesc": "Our grapes are juicy, refreshing, and packed with natural sugar to give you energy without guilt.",
+      "CarrotTitle": "Crunchy Root Veggies",
+      "CarrotDesc": "Rich in fiber and beta-carotene, our root vegetables are great for digestion and glowing skin.",
+      "LeafTitle": "Leafy Greens for Vitality",
+      "LeafDesc": "Spinach, kale, and more! Our leafy greens are rich in iron and essential nutrients to fuel your body naturally."
+    }
   },
   "ContactUs": {
     "GitIn": "Get In Touch",
