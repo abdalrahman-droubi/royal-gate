@@ -15,7 +15,7 @@ const Footer = () => {
           <Image
             src={Logo}
             alt="Royal Export Portal"
-            className="w-48 h-40"
+            className="w-48 h-32 object-contain"
             priority
           />
         </div>

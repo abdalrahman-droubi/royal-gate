@@ -58,7 +58,7 @@ export const AboutUs = () => {
 };
 
 const Icon = ({ number }: { number: number }) => (
-  <div className="flex items-center justify-center bg-secondary text-white rounded-full py-2 px-4 me-4">
+  <div className="flex items-center justify-center  bg-primary text-white rounded-full py-2 px-4 me-4">
     {number}
   </div>
 );

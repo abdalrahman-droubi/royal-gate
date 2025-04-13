@@ -17,33 +17,6 @@ type ServiceCardProps = {
   title: string;
   description: string;
 };
-
-const ServiceCard = ({
-  iconSrc,
-  bgSrc,
-  title,
-  description,
-}: ServiceCardProps) => {
-  return (
-    <div className="flex flex-col items-center text-center">
-      <div className="relative w-32 h-32 mb-4">
-        <Image src={bgSrc} alt="background" fill className="object-contain" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <Image
-            src={iconSrc}
-            alt={title}
-            width={40}
-            height={40}
-            className="object-contain"
-          />
-        </div>
-      </div>
-      <h3 className="text-lg font-bold mb-2">{title}</h3>
-      <p className="text-sm text-gray-600">{description}</p>
-    </div>
-  );
-};
-
 type Service = {
   iconSrc: StaticImageData;
   bgSrc: StaticImageData;
@@ -82,7 +55,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative py-16 px-4 overflow-hidden">
+    <section className="relative h-screen  overflow-hidden">
       {/* Background pattern image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -94,7 +67,7 @@ const ServicesSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative container-main spacing-y-main">
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-[#286485] text-2xl font-medium mb-2">
@@ -122,6 +95,31 @@ const ServicesSection = () => {
         </div>
       </div>
     </section>
+  );
+};
+const ServiceCard = ({
+  iconSrc,
+  bgSrc,
+  title,
+  description,
+}: ServiceCardProps) => {
+  return (
+    <div className="flex flex-col items-center text-center">
+      <div className="relative w-32 h-32 mb-4">
+        <Image src={bgSrc} alt="background" fill className="object-contain" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Image
+            src={iconSrc}
+            alt={title}
+            width={40}
+            height={40}
+            className="object-contain"
+          />
+        </div>
+      </div>
+      <h3 className="text-lg font-bold mb-2">{title}</h3>
+      <p className="text-sm text-gray-600">{description}</p>
+    </div>
   );
 };
 

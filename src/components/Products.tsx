@@ -72,8 +72,8 @@ export default function Products({ locale }: { locale: string }) {
       {/* <Trending locale={locale} /> */}
 
       <div className="spacing-y-main container-main relative z-10">
-        <div className="p-2 m-0 bg-white  rounded-2xl shadow-custom-white">
-          <div className="text-center mb-16">
+        <div className="">
+          <div className="text-center mb-10">
             <h2 className="text-[#286485] text-2xl font-medium mb-2">
               {t("products.title")}
             </h2>
@@ -84,7 +84,7 @@ export default function Products({ locale }: { locale: string }) {
               <Image src={SubTitle} alt="divider" width={800} height={800} />
             </div>
           </div>
-          <div className="md:px-14 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-0 sm:mt-6">
+          <div className=" grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-0 sm:mt-6">
             {products.map((product, index) => {
               return (
                 <div
