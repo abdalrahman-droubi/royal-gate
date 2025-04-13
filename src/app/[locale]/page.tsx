@@ -68,9 +68,9 @@ export default function Home({
           <section id="products" className="scroll-mt-20 ">
             <Products locale={params.locale} />
           </section>
-          {/* <section className="scroll-mt-20">
-            <Organic locale={params.locale} />
-          </section> */}
+          <section className="scroll-mt-20">
+            <Organic />
+          </section>
           <section id="gallery" className="scroll-mt-20">
             <Gallery />
           </section>
