@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "@assets/Logo.svg";
+import Logo from "@assets/Royal.png";
 import { useTranslations } from "next-intl";
 
 const Footer = () => {
@@ -15,9 +15,7 @@ const Footer = () => {
           <Image
             src={Logo}
             alt="Royal Export Portal"
-            width={120}
-            height={40}
-            className="h-[320px] w-[320px]"
+            className="w-48 h-40"
             priority
           />
         </div>

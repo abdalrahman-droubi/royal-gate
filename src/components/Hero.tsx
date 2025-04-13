@@ -74,7 +74,7 @@ const Hero = ({ locale }: { locale: string }) => {
       >
         {sliderData.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="relative h-screen bg-[#6eca7f]">
+            <div className="relative h-screen  bg-[#286485]">
               <div className="container-main space-y-main  h-full flex items-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center h-full">
                   <div className="relative z-10 order-2 md:order-1 text-center md:text-left px-4 md:px-0">
@@ -87,7 +87,7 @@ const Hero = ({ locale }: { locale: string }) => {
                     <p className="text-white max-w-md mx-auto md:mx-0 mb-6">
                       {slide.description}
                     </p>
-                    <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-full px-6">
+                    <Button className="bg-gray-400 hover:bg-gray-500 text-black font-medium rounded-full px-6">
                       {slide.buttonText}
                     </Button>
                   </div>

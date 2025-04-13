@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import logo from "@assets/Logo.svg";
+import logo from "@assets/Royal.png";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Globe, Menu, X } from "lucide-react";

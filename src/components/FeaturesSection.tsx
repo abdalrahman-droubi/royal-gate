@@ -1,8 +1,7 @@
-// components/ServicesSection.tsx
 import Image, { StaticImageData } from "next/image";
 import SubTitle from "@assets/subTitle.svg";
 import Back from "@assets/Background1.svg";
-import OrangeFee from "@assets/OrangeFee.svg";
+import { useTranslations } from "next-intl";
 import FreeShip from "@assets/free shipping.svg";
 import Bread from "@assets/Bread.svg";
 import Mony from "@assets/money back.svg";
@@ -12,7 +11,6 @@ import WaterMalon from "@assets/watermelon55.svg";
 import ContactU from "@assets/contact us.svg";
 import Food from "@assets/Food.svg";
 
-// Define prop types for the ServiceCard
 type ServiceCardProps = {
   iconSrc: StaticImageData;
   bgSrc: StaticImageData;
@@ -20,7 +18,6 @@ type ServiceCardProps = {
   description: string;
 };
 
-// ServiceCard component with types
 const ServiceCard = ({
   iconSrc,
   bgSrc,
@@ -30,9 +27,7 @@ const ServiceCard = ({
   return (
     <div className="flex flex-col items-center text-center">
       <div className="relative w-32 h-32 mb-4">
-        {/* Background circle image */}
         <Image src={bgSrc} alt="background" fill className="object-contain" />
-        {/* Icon image */}
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
             src={iconSrc}
@@ -49,7 +44,6 @@ const ServiceCard = ({
   );
 };
 
-// Define service item type
 type Service = {
   iconSrc: StaticImageData;
   bgSrc: StaticImageData;
@@ -57,32 +51,33 @@ type Service = {
   description: string;
 };
 
-// ServicesSection component
 const ServicesSection = () => {
+  const t = useTranslations("Services");
+
   const services: Service[] = [
     {
       iconSrc: Bread,
       bgSrc: FreeShip,
-      title: "Always Fresh",
-      description: "We care about what you eatant to produce food which nshes.",
+      title: t("services.0.title"),
+      description: t("services.0.description"),
     },
     {
       iconSrc: Broccoli,
       bgSrc: Mony,
-      title: "100% Natural",
-      description: "We care about what you eatant to produce food which nshes.",
+      title: t("services.1.title"),
+      description: t("services.1.description"),
     },
     {
       iconSrc: WaterMalon,
       bgSrc: Policy,
-      title: "Best Quality",
-      description: "We care about what you eatant to produce food which nshes.",
+      title: t("services.2.title"),
+      description: t("services.2.description"),
     },
     {
       iconSrc: Food,
       bgSrc: ContactU,
-      title: "Food Safety",
-      description: "We care about what you eatant to produce food which nshes.",
+      title: t("services.3.title"),
+      description: t("services.3.description"),
     },
   ];
 
@@ -102,12 +97,14 @@ const ServicesSection = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-green-600 text-2xl font-medium mb-2">Services</h2>
+          <h2 className="text-[#286485] text-2xl font-medium mb-2">
+            {t("sectionSubtitle")}
+          </h2>
           <h1 className="text-3xl md:text-4xl font-bold">
-            Welcome To Organici
+            {t("sectionTitle")}
           </h1>
           <div className="flex justify-center mt-4">
-            <Image src={SubTitle} alt="divider" width={60} height={60} />
+            <Image src={SubTitle} alt="divider" width={800} height={800} />
           </div>
         </div>
 
@@ -122,19 +119,6 @@ const ServicesSection = () => {
               description={service.description}
             />
           ))}
-        </div>
-
-        {/* Citrus Image */}
-        <div className="relative mt-[-60px] z-20 pt-20 pb-10">
-          <div className="flex justify-center">
-            <Image
-              src={OrangeFee}
-              alt="Organic Citrus Fruits"
-              width={400}
-              height={300}
-              className="object-contain"
-            />
-          </div>
         </div>
       </div>
     </section>
