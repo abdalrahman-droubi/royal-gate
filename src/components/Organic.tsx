@@ -1,8 +1,9 @@
-"use client";
-
-import { Egg, Drumstick, Leaf, HeartPulse } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Apple, Carrot, Grape, Leaf } from "lucide-react";
 
 export default function NutrioProgramme() {
+  const t = useTranslations("Organic");
+
   return (
     <section className="bg-primary py-16 relative">
       {/* Leaf decoration */}
@@ -20,10 +21,8 @@ export default function NutrioProgramme() {
 
       {/* Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-white mb-2">
-          Know About Nutrio Programme
-        </h2>
-        <p className="text-blue-100 text-sm">Fusce vulputate eleifend sapien</p>
+        <h2 className="text-3xl font-bold text-white mb-2">{t("Title")}</h2>
+        <p className="text-blue-100 text-sm">{t("Subtitle")}</p>
       </div>
 
       {/* Content */}
@@ -34,34 +33,26 @@ export default function NutrioProgramme() {
             {/* Item 1 */}
             <div className="flex flex-row-reverse items-start pr-12 md:pr-16 gap-4 text-right">
               <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center shrink-0">
-                <HeartPulse className="text-primary" size={28} />
+                <Apple className="text-primary" size={28} />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Keeps Healthy Record
+                  {t("Items.FruitTitle")}
                 </h3>
-                <p className="text-blue-100 text-sm">
-                  Sed vestibulum nulla elementum auctor tincidunt. Aliquam sit
-                  amet cursus mauris. Sed vitae mattis ipsum. Vestibulum enim
-                  nulla, sollicitudin ac hendrerit tempore.
-                </p>
+                <p className="text-blue-100 text-sm">{t("Items.FruitDesc")}</p>
               </div>
             </div>
 
             {/* Item 3 */}
             <div className="flex flex-row-reverse items-start pr-12 md:pr-16 gap-4 text-right">
               <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center shrink-0">
-                <Egg className="text-primary" size={28} />
+                <Grape className="text-primary" size={28} />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Eggs Make you Fit
+                  {t("Items.GrapeTitle")}
                 </h3>
-                <p className="text-blue-100 text-sm">
-                  Sed vestibulum nulla elementum auctor tincidunt. Aliquam sit
-                  amet cursus mauris. Sed vitae mattis ipsum. Vestibulum enim
-                  nulla, sollicitudin ac hendrerit tempore.
-                </p>
+                <p className="text-blue-100 text-sm">{t("Items.GrapeDesc")}</p>
               </div>
             </div>
           </div>
@@ -71,17 +62,13 @@ export default function NutrioProgramme() {
             {/* Item 2 */}
             <div className="flex items-start pl-12 md:pl-16 gap-4 text-left">
               <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center shrink-0">
-                <Drumstick className="text-primary" size={28} />
+                <Carrot className="text-primary" size={28} />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Meats Reduces Fat
+                  {t("Items.CarrotTitle")}
                 </h3>
-                <p className="text-blue-100 text-sm">
-                  Aenean leo ligula porttitor eu consequat vitae eleifend ac
-                  enim. Aliquam lorem ante dapibus in viverra quis feugiat a
-                  tellus. Phasellus viverra nulla ut metus varius laoreet.
-                </p>
+                <p className="text-blue-100 text-sm">{t("Items.CarrotDesc")}</p>
               </div>
             </div>
 
@@ -92,13 +79,9 @@ export default function NutrioProgramme() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">
-                  Pure Green Vegetables
+                  {t("Items.LeafTitle")}
                 </h3>
-                <p className="text-blue-100 text-sm">
-                  Donec vitae sapien ut libero venenatis faucibus. Nullam quis
-                  ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
-                  leo. Sed fringilla mauris sit amet nibh.
-                </p>
+                <p className="text-blue-100 text-sm">{t("Items.LeafDesc")}</p>
               </div>
             </div>
           </div>
