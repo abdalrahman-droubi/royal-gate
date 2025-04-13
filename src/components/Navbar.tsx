@@ -45,8 +45,8 @@ const Navbar = () => {
 
   return (
     // <nav className="sticky top-1 mt-5 z-50 w-full max-w-6xl container-main">
-    <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl container-main py-4">
-      <div className="bg-white rounded shadow-md px-6 py-7">
+    <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl container-main py-2">
+      <div className="bg-white rounded shadow-md px-6 py-6">
         <div className="relative flex items-center justify-center">
           {/* Logo - Left */}
           <div className="absolute left-0 py-2">
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <li key={`${href}${label}`}>
                   <button
                     onClick={() => handleScroll(href)}
-                    className="font-medium text-lg text-gray-800 hover:text-gray-600 transition-colors"
+                    className="font-medium text-base text-gray-800 hover:text-gray-600 transition-colors"
                   >
                     {translation(label as any)}
                   </button>
