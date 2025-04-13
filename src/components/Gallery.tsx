@@ -1,14 +1,4 @@
-"use client";
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-
-// Import image assets
+import React from "react";
 import peach from "@assets/peachSlider.svg";
 import Lemon from "@assets/LemonSlider.svg";
 import strawberry from "@assets/StrawberrySlider.svg";
@@ -17,129 +7,115 @@ import Orange from "@assets/OrangeSlider.svg";
 import Banan from "@assets/BananSlider.svg";
 import Tomato from "@assets/tomato.svg";
 import watermelon from "@assets/watermelon.svg";
+import Avocado from "@assets/avocadoFarm.svg";
+import Peach from "@assets/PeachFarm.svg";
+import Onion from "@assets/OnionFarm.svg";
+import Grapes from "@assets/GrapesFarm.svg";
+import Cucumber from "@assets/cucumberFarm.svg";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-// Define type for the slides
-type Slide = {
-  img: string; // Path to the image
-  title: string; // Title or name of the image
-};
+const images = [
+  {
+    src: peach,
+    alt: "Planting seedling",
+    className:
+      "sm:col-span-2 col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+    priority: true,
+  },
+  {
+    src: Lemon,
+    alt: "Wheat and corn field",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+    priority: true,
+  },
+  {
+    src: strawberry,
+    alt: "Tropical fruits",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+    priority: true,
+  },
+  {
+    src: Pomegranate,
+    alt: "People in field",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+  {
+    src: Orange,
+    alt: "Harvesting vegetables",
+    className:
+      "col-span-1 sm:h-[600px] h-[200px] sm:row-span-2 w-full sm:w-auto",
+  },
+  {
+    src: Banan,
+    alt: "Healthy breakfast bowl",
+    className:
+      "sm:col-span-2 col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+  {
+    src: Tomato,
+    alt: "Lettuce field",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+  {
+    src: watermelon,
+    alt: "Farmers market produce",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+  {
+    src: Avocado,
+    alt: "Strawberries and honey",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+  {
+    src: Peach,
+    alt: "Freshly picked apples",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+  {
+    src: Onion,
+    alt: "Fresh milk and cheese",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+  {
+    src: Grapes,
+    alt: "Local produce display",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+  {
+    src: Cucumber,
+    alt: "Local produce display",
+    className: "col-span-1 sm:h-[300px] h-[200px] w-full sm:w-auto",
+  },
+];
 
 const Gallery = () => {
-  const t = useTranslations();
-
-  const [modalImage, setModalImage] = useState<string | null>(null);
-
-  const slides: Slide[] = [
-    { img: peach, title: "Peach" },
-    { img: Lemon, title: "Lemon" },
-    { img: strawberry, title: "Strawberry" },
-    { img: Pomegranate, title: "Pomegranate" },
-    { img: Orange, title: "Orange" },
-    { img: Banan, title: "Banana" },
-    { img: Tomato, title: "Tomato" },
-    { img: watermelon, title: "Watermelon" },
-  ];
-
-  const handleImageClick = (image: string) => {
-    setModalImage(image);
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-  };
+  const translation = useTranslations("Gallery");
 
   return (
-    <section className="gallery-section py-8 spacing-y-main container-main">
-      <div className="text-center mb-12">
-        <div className="flex items-center justify-center gap-2 text-[#286485]">
-          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
-          <p className="text-sm text-[#286485] tracking-widest uppercase">
-            {t("products.title")}
-          </p>
-          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
-          <div className="w-2 h-2 border border-[#286485] rounded-full"></div>
-        </div>
-
-        <h2 className="text-3xl font-bold text-gray-800">
-          {t("Gallery.gallery")}
-        </h2>
-      </div>
-      <div className="gallery-container relative overflow-hidden rounded-lg">
-        <Swiper
-          modules={[Pagination, Navigation, Autoplay]}
-          spaceBetween={0}
-          slidesPerView={5}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
-          breakpoints={{
-            1024: {
-              slidesPerView: 5,
-            },
-            768: {
-              slidesPerView: 3,
-            },
-            640: {
-              slidesPerView: 2,
-            },
-            0: {
-              slidesPerView: 1,
-            },
-          }}
-          className="w-full"
-        >
-          {slides.map((slide, index) => (
-            <SwiperSlide
-              key={index}
-              className="flex items-center justify-center"
-            >
-              <div
-                className="relative group cursor-pointer flex justify-center"
-                onClick={() => handleImageClick(slide.img)}
-              >
-                <Image
-                  src={slide.img}
-                  alt={slide.title}
-                  width={700}
-                  height={700}
-                  className="object-cover transition-transform group-hover:scale-105  h-[25 0px] "
-                />
-                <div className="absolute w-[300px]  inset-0 bg-primary opacity-0 group-hover:opacity-20 transition-opacity rounded-lg"></div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      {modalImage && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="relative bg-white rounded-lg p-4">
-            <button
-              onClick={closeModal}
-              className="absolute top-1 right-1 text-black text-lg font-bold"
-            >
-              ✕
-            </button>
+    <div className="spacing-y-main">
+      <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-8">
+        {translation("gallery")}
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`${image.className} relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105`}
+          >
             <Image
-              src={modalImage}
-              alt="Selected image"
-              width={500}
-              height={500}
-              className="object-contain rounded-lg"
+              src={image.src}
+              alt={image.alt}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              priority={image.priority}
+              className="object-cover"
+              loading={image.priority ? "eager" : "lazy"}
             />
           </div>
-        </div>
-      )}
-    </section>
+        ))}
+      </div>
+    </div>
   );
 };
 
