@@ -30,7 +30,7 @@ const ContactUs = () => {
               {t("PhoneNumber")}
             </h3>
             <a
-              href="tel:+962777777777"
+              href="tel:+971 56 871 5734"
               className="text-gray-600 hover:text-gray-600 transition-colors"
             >
               +962 7 9388 0900
