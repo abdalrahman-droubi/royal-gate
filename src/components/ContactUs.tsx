@@ -33,7 +33,7 @@ const ContactUs = () => {
               href="tel:+971 56 871 5734"
               className="text-gray-600 hover:text-gray-600 transition-colors"
             >
-              +962 7 9388 0900
+              +971 56 871 5734
             </a>
           </div>
 
@@ -44,7 +44,7 @@ const ContactUs = () => {
               {t("EmailAddress")}
             </h3>
             <a
-              href="mailto:info@plamgate.com"
+              href="mailto:Info@royal-gate.co"
               className="text-gray-600 hover:text-gray-600 transition-colors"
             >
               Info@royal-gate.co{" "}
