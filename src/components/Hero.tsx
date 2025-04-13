@@ -74,7 +74,7 @@ const Hero = ({ locale }: { locale: string }) => {
       >
         {sliderData.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className="relative h-[600px] md:h-[650px] bg-[#286485]">
+            <div className="relative h-screen  bg-[#286485]">
               <div className="container-main space-y-main  h-full flex items-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center h-full">
                   <div className="relative z-10 order-2 md:order-1 text-center md:text-left px-4 md:px-0">
@@ -125,6 +125,19 @@ const Hero = ({ locale }: { locale: string }) => {
 
       {/* Custom pagination */}
       <div className="swiper-pagination absolute bottom-4 left-0 right-0 z-10 flex justify-center gap-2"></div>
+      <svg
+        className=" absolute top-[-44px] left-0 right-0 mx-auto w-[240px] h-[45px] z-[2]"
+        x="0px"
+        y="0px"
+        viewBox="0 0 147.7 35.2"
+        style={{ enableBackground: "new 0 0 147.7 35.2" }}
+        xmlSpace="preserve"
+      >
+        <path
+          d="M147.7,35.2c-49.2,0-98.5,0-147.7,0c10.4-3.6,18.7-10.6,27.5-16.9c7.7-5.6,16.1-10,24.9-13.8c14.5-6.2,28.8-6.1,43.2,0.1c9.9,4.2,19.2,9.4,27.8,15.9C130.9,26.4,138.6,31.9,147.7,35.2z"
+          fill="#fbfbf3"
+        />
+      </svg>
     </div>
   );
 };
