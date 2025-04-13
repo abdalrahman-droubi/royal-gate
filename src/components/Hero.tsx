@@ -58,7 +58,16 @@ const Hero = ({ locale }: { locale: string }) => {
   const [swiperRef, setSwiperRef] = useState<any>(null);
   return (
     <div className="relative">
-      <Swiper
+      <video
+        // ref={videoRef}
+        className="object-cover w-full h-full   "
+        src="/assets/Strawberry.mp4"
+        autoPlay
+        loop
+        // muted={}
+        playsInline
+      ></video>
+      {/* <Swiper
         onSwiper={setSwiperRef}
         modules={[Navigation, Pagination, Autoplay]}
         slidesPerView={1}
@@ -107,7 +116,7 @@ const Hero = ({ locale }: { locale: string }) => {
         ))}
       </Swiper>
 
-      {/* Custom navigation buttons */}
+      
       <button
         onClick={() => swiperRef?.slidePrev()}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-md hover:bg-gray-100 transition-colors"
@@ -123,21 +132,8 @@ const Hero = ({ locale }: { locale: string }) => {
         <ChevronRight className="h-6 w-6" />
       </button>
 
-      {/* Custom pagination */}
-      <div className="swiper-pagination absolute bottom-4 left-0 right-0 z-10 flex justify-center gap-2"></div>
-      <svg
-        className=" absolute top-[-44px] left-0 right-0 mx-auto w-[240px] h-[45px] z-[2]"
-        x="0px"
-        y="0px"
-        viewBox="0 0 147.7 35.2"
-        style={{ enableBackground: "new 0 0 147.7 35.2" }}
-        xmlSpace="preserve"
-      >
-        <path
-          d="M147.7,35.2c-49.2,0-98.5,0-147.7,0c10.4-3.6,18.7-10.6,27.5-16.9c7.7-5.6,16.1-10,24.9-13.8c14.5-6.2,28.8-6.1,43.2,0.1c9.9,4.2,19.2,9.4,27.8,15.9C130.9,26.4,138.6,31.9,147.7,35.2z"
-          fill="#fbfbf3"
-        />
-      </svg>
+ 
+      <div className="swiper-pagination absolute bottom-4 left-0 right-0 z-10 flex justify-center gap-2"></div> */}
     </div>
   );
 };
