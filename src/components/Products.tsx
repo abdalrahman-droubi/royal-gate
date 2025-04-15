@@ -23,6 +23,8 @@ import p9 from "@assets/p8.svg";
 import pc from "@assets/p21.svg";
 import p10 from "@assets/p10.svg";
 import MM from "@assets/mm.svg";
+import Egg from "@assets/Egg.svg";
+import Meet from "@assets/Meat.jpg";
 
 type Product = {
   name: string;
@@ -65,6 +67,8 @@ export default function Products({ locale }: { locale: string }) {
     { name: t("products.guava"), image: p10 },
     { name: t("products.onion"), image: P3 },
     { name: t("products.tangerine"), image: MM },
+    { name: t("products.Egg"), image: Egg },
+    { name: t("products.Meat"), image: Meet },
   ];
 
   return (
