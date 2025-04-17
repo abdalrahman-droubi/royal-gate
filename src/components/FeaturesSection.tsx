@@ -17,6 +17,7 @@ type ServiceCardProps = {
   bgSrc: StaticImageData;
   title: string;
   description: string;
+  index: number;
 };
 type Service = {
   iconSrc: StaticImageData;
@@ -56,8 +57,8 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="relative pb-52">
-      <section className="relative min-h-screen pb-24  overflow-hidden">
+    <div className="relative pb-28 md:pb-52">
+      <section className="relative min-h-screen pb-24  ">
         {/* Background pattern image */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -92,13 +93,14 @@ const ServicesSection = () => {
                 bgSrc={service.bgSrc}
                 title={service.title}
                 description={service.description}
+                index={index}
               />
             ))}
           </div>
         </div>
       </section>
 
-      <div className="absolute bottom-0 h-[58vh] w-full z-10">
+      <div className="absolute bottom-0 h-[28vh] md:h-[58vh] w-full z-10">
         <Image
           src={OrangeFee}
           alt="Background pattern"
@@ -114,19 +116,26 @@ const ServiceCard = ({
   bgSrc,
   title,
   description,
+  index,
 }: ServiceCardProps) => {
   return (
-    <div className="flex flex-col items-center text-center">
+    <div
+      className="flex flex-col items-center text-center group"
+      // data-aos="fade-up"
+      // data-aos-duration={index * 800}
+    >
       <div className="relative w-32 h-32 mb-4">
         <Image src={bgSrc} alt="background" fill className="object-contain" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <Image
-            src={iconSrc}
-            alt={title}
-            width={40}
-            height={40}
-            className="object-contain"
-          />
+          <div className="flip-container">
+            <Image
+              src={iconSrc}
+              alt={title}
+              width={40}
+              height={40}
+              className="object-contain flip-icon"
+            />
+          </div>
         </div>
       </div>
       <h3 className="text-lg font-bold mb-2">{title}</h3>
