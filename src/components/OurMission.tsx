@@ -58,7 +58,7 @@ export default function FarmersSection() {
 
   return (
     <div className="w-full">
-      <div className="max-w-7xl mx-auto p-6 flex flex-col md:flex-row gap-8">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2">
           <div className="mb-6">
             <div className="text-primary text-5xl font-light -mb-6">"</div>
@@ -102,9 +102,9 @@ export default function FarmersSection() {
               ))}
           </div>
 
-          <button className="bg-primary hover:bg-secondary text-white px-8 py-3 rounded transition-colors">
+          {/* <button className="bg-primary hover:bg-secondary text-white px-8 py-3 rounded transition-colors">
             {t("readMore")}
-          </button>
+          </button> */}
         </div>
 
         <div className="md:w-1/2">
