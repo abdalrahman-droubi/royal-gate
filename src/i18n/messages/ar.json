@@ -65,6 +65,9 @@
   },
 
   "products": {
+    "meatEggsTab": "لحوم وبيض",
+    "fruitsTab": "فواكه",
+    "vegetablesTab": "خضروات",
     "title": "طازج وعضوي",
     "Productss": "المنتجات",
     "orange": "برتقال",

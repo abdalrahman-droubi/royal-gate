@@ -3,6 +3,7 @@ import SubTitle from "@assets/subTitle.svg";
 import Back from "@assets/Background1.svg";
 import { useTranslations } from "next-intl";
 import FreeShip from "@assets/free shipping.svg";
+import OrangeFee from "@assets/OrangeFee.svg";
 import Bread from "@assets/Bread.svg";
 import Mony from "@assets/money back.svg";
 import Broccoli from "@assets/broccoli.svg";
@@ -55,46 +56,57 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="relative h-screen  overflow-hidden">
-      {/* Background pattern image */}
-      <div className="absolute inset-0 z-0">
+    <div className="relative pb-52">
+      <section className="relative min-h-screen pb-24  overflow-hidden">
+        {/* Background pattern image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={Back}
+            alt="Background pattern"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="relative container-main spacing-y-main">
+          {/* Section Title */}
+          <div className="text-center mb-16">
+            <h2 className="text-[#286485] text-2xl font-medium mb-2">
+              {t("sectionSubtitle")}
+            </h2>
+            <h1 className="text-3xl md:text-4xl font-bold">
+              {t("sectionTitle")}
+            </h1>
+            <div className="flex justify-center mt-4">
+              <Image src={SubTitle} alt="divider" width={800} height={800} />
+            </div>
+          </div>
+
+          {/* Service Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                iconSrc={service.iconSrc}
+                bgSrc={service.bgSrc}
+                title={service.title}
+                description={service.description}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div className="absolute bottom-0 h-[58vh] w-full z-10">
         <Image
-          src={Back}
+          src={OrangeFee}
           alt="Background pattern"
           fill
           className="object-cover"
         />
       </div>
-
-      {/* Content */}
-      <div className="relative container-main spacing-y-main">
-        {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-[#286485] text-2xl font-medium mb-2">
-            {t("sectionSubtitle")}
-          </h2>
-          <h1 className="text-3xl md:text-4xl font-bold">
-            {t("sectionTitle")}
-          </h1>
-          <div className="flex justify-center mt-4">
-            <Image src={SubTitle} alt="divider" width={800} height={800} />
-          </div>
-        </div>
-
-        {/* Service Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              iconSrc={service.iconSrc}
-              bgSrc={service.bgSrc}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    </div>
   );
 };
 const ServiceCard = ({
