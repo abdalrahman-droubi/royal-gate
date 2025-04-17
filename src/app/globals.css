@@ -23,6 +23,18 @@ html[dir="rtl"] {
   opacity: 1;
   background: white;
 }
+.flip-container {
+  perspective: 600px;
+}
+
+.flip-icon {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.group:hover .flip-icon {
+  transform: rotateY(180deg);
+}
 
 @layer utilities {
   .text-balance {
