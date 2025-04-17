@@ -138,7 +138,9 @@ export default function Products({ locale }: { locale: string }) {
             />
             {tabs.map((tab, index) => (
               <button
-                ref={(el) => (tabsRef.current[index] = el)}
+                ref={(el) => {
+                  tabsRef.current[index] = el;
+                }}
                 key={tab.value}
                 className={`flex-1 py-2 text-sm  text-center font-medium transition-colors duration-200 rounded-lg relative z-10 mx-1 ${
                   activeTab === tab.value
