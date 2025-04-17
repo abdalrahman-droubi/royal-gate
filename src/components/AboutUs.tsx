@@ -10,9 +10,10 @@ export const AboutUs = () => {
   return (
     <section className="flex items-center justify-between mt-2">
       <div className="relative md:p-0 p-5 md:w-[40%] w-full">
-        <h1 className="self-baseline text-2xl sm:text-3xl md:text-6xl font-bold mb-6 sm:mb-8 text-primary">
+        <h1 className="self-baseline text-2xl sm:text-3xl md:text-6xl font-bold mb-6 sm:mb-8  text-white lg:text-primary">
           {translation("title")}
         </h1>
+
         <p className="mb-6 mt-10 md:text-gray-700 text-white">
           {translation("subtitle")}
         </p>
