@@ -9,6 +9,7 @@ import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import Organic from "@/components/Organic";
 import FeaturesSection from "@/components/FeaturesSection";
+import OurMission from "@/components/OurMission";
 import Lottie from "react-lottie";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -57,13 +58,12 @@ export default function Home({
             <Hero locale={params.locale} />
           </section>
           <FeaturesSection />
-
           <section
             id="features"
             className="scroll-mt-20 container-main spacing-y-main"
           ></section>
           <section id="about" className="scroll-mt-20 container-main">
-            <AboutUs />
+            <OurMission />
           </section>
           <section id="products" className="scroll-mt-20 ">
             <Products locale={params.locale} />
@@ -73,12 +73,13 @@ export default function Home({
           </section>
           <section id="gallery" className="scroll-mt-20 container-main">
             <Gallery />
+          </section>{" "}
+          <section id="ourMission" className="scroll-mt-20 container-main">
+            <AboutUs />
           </section>
-
           <section id="contact" className="scroll-mt-20 container-main">
             <ContactUs />
           </section>
-
           <Footer />
         </main>
       )}
