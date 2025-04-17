@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import aboutRight from "@assets/about-right.svg";
+import News from "@assets/News.svg";
 import { Link } from "@/i18n/routing";
 
 export const AboutUs = () => {
@@ -30,14 +30,9 @@ export const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className=" mt-3 flex justify-center">
-          <button className="bg-primary text-white px-6 py-2 rounded-md hover:shadow-lg hover:bg-gray-600 transition-all">
-            <Link href="#contact">{translation("contact")}</Link>
-          </button>
-        </div>
         <div className="md:hidden absolute inset-0 -z-10 w-full h-full rounded-xl overflow-hidden">
           <Image
-            src={aboutRight}
+            src={News}
             alt="about-right"
             className="w-full h-full object-cover"
             layout="fill"
@@ -47,7 +42,7 @@ export const AboutUs = () => {
       </div>
       <div className="relative hidden md:block w-[40%] h-[400px] rounded-xl overflow-hidden">
         <Image
-          src={aboutRight}
+          src={News}
           alt="about-right"
           className="w-full h-full object-cover"
           layout="fill"
