@@ -44,18 +44,21 @@ const Navbar = () => {
   };
 
   return (
-    // <nav className="sticky top-1 mt-5 z-50 w-full max-w-6xl container-main">
     <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl container-main py-2">
       <div className="bg-white rounded shadow-md px-6 py-6">
         <div className="relative flex items-center justify-center">
           {/* Logo - Left */}
           <div className="absolute left-0 py-2">
-            <Image src={logo} alt="Logo" className="w-32 h-32 object-contain" />
+            <Image
+              src={logo}
+              alt="Logo"
+              className="w-24 h-24  md:w-32 md:h-32 object-contain"
+            />
           </div>
 
           {/* Desktop Navigation - Center */}
           <div className="hidden md:flex items-center">
-            <ul className="flex items-center space-x-8">
+            <ul className="flex items-center gap-x-8">
               {links.map(({ href, label }) => (
                 <li key={`${href}${label}`}>
                   <button

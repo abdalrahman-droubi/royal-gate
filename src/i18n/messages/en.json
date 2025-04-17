@@ -49,6 +49,9 @@
     "Fresh Fruit": "Fresh Fruit"
   },
   "products": {
+    "meatEggsTab": "Meat & Eggs",
+    "fruitsTab": "Fruits",
+    "vegetablesTab": "Vegetables",
     "title": "Fresh & Organic",
     "Productss": "Our Product ",
     "orange": "Orange",
