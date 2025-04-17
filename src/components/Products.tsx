@@ -69,9 +69,8 @@ export default function Products({ locale }: { locale: string }) {
     { name: t("products.onion"), image: P3, category: "vegetable" },
     { name: t("products.garlic"), image: p5, category: "vegetable" },
     { name: t("products.eggplant"), image: Avocado, category: "vegetable" },
-    { name: t("products.cucumber"), image: P9, category: "vegetable" },
 
-    { name: t("products.tangerine"), image: MM, category: "meat_egg" },
+    { name: t("products.tangerine"), image: MM, category: "fruit" },
     { name: t("products.Egg"), image: Egg, category: "meat_egg" },
     { name: t("products.Meat"), image: Meet, category: "meat_egg" },
   ];
