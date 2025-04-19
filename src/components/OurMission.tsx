@@ -16,7 +16,7 @@ export default function FarmersSection() {
   const t = useTranslations("tabs");
   const locale = useLocale();
   const isArabic = locale === "ar";
-  const [activeTab, setActiveTab] = useState("goals");
+  const [activeTab, setActiveTab] = useState("about");
 
   const tabs = [
     { id: "about", label: t("about"), content: t.raw("aboutContent") },
@@ -101,10 +101,6 @@ export default function FarmersSection() {
                 </p>
               ))}
           </div>
-
-          {/* <button className="bg-primary hover:bg-secondary text-white px-8 py-3 rounded transition-colors">
-            {t("readMore")}
-          </button> */}
         </div>
 
         <div className="md:w-1/2">

@@ -12,7 +12,7 @@ const Hero = ({ locale }: { locale: string }) => {
       {/* Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/assets/Strawberry.mp4"
+        src="https://media.istockphoto.com/id/1222819052/video/healthy-food-selection.mp4?s=mp4-640x640-is&k=20&c=Y0s4m_xbQxdMapCjy7PBe7RFH4ROJN0Lo3XWM8di5rI="
         autoPlay
         loop
         muted
@@ -20,7 +20,7 @@ const Hero = ({ locale }: { locale: string }) => {
       ></video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center text-center h-full px-4">
