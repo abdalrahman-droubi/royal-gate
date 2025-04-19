@@ -7,16 +7,9 @@
     "Gallery": "Gallery"
   },
   "Hero": {
-    "organicLabel": "100% ORGANIC",
-    "title": "Organic Fruits  ",
-    "description": "Fresh, organic fruits and vegetables sourced from nature. Experience the goodness of healthy, sustainable produce for a vibrant, nourishing lifestyle. From farm to table, our selection is carefully chosen to provide the freshest, most natural options.",
-    "buttonText": "Read More",
-    "h": "h",
-    "e": "e",
-    "a": "a",
-    "l": "l",
-    "t": "t",
-    "y": "y"
+    "title": "Fresh Fruit Export Hub",
+    "subtitle": "Exporting top-quality fruits, vegetables, meats, and eggs from our farms to homes and businesses worldwide.",
+    "description": "Our products are handpicked, carefully handled, and shipped with care to ensure freshness and quality. Whether you're a retailer, wholesaler, or distributor, we offer reliable service and global reach with every shipment."
   },
   "FeaturesSection": {
     "productForm": "Product Form",
