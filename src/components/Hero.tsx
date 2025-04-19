@@ -20,7 +20,7 @@ const Hero = ({ locale }: { locale: string }) => {
       ></video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center text-center h-full px-4">

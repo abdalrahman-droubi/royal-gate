@@ -70,7 +70,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Content */}
-        <div className="relative container-main spacing-y-main">
+        <div className="relative container-main pt-5">
           {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="text-[#286485] text-2xl font-medium mb-2">
@@ -100,7 +100,7 @@ const ServicesSection = () => {
         </div>
       </section>
 
-      <div className="absolute bottom-0 h-[28vh] md:h-[58vh] w-full z-10">
+      <div className="absolute bottom-0 h-[24vh] md:h-[58vh] w-full z-10">
         <Image
           src={OrangeFee}
           alt="Background pattern"
