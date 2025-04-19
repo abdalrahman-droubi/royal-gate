@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 const Hero = ({ locale }: { locale: string }) => {
   const translation = useTranslations("Hero");
   const [swiperRef, setSwiperRef] = useState<any>(null);
+  const t = useTranslations("Hero");
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
@@ -23,19 +24,15 @@ const Hero = ({ locale }: { locale: string }) => {
       <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center text-center h-full px-4 ">
+      <div className="relative z-20 flex flex-col items-center justify-center text-center h-full px-4">
         <h1 className="text-white text-4xl md:text-6xl font-bold mb-4 animate-fadeUp delay-200">
-          Fresh Fruit Export Hub
+          {t("title")}
         </h1>
         <p className="text-white text-lg md:text-2xl max-w-xl animate-fadeUp delay-400">
-          Exporting top-quality fruits, vegetables, meats, and eggs from our
-          farms to homes and businesses worldwide.
+          {t("subtitle")}
         </p>
         <p className="text-white text-md md:text-xl max-w-2xl mt-3 animate-fadeUp delay-600">
-          Our products are handpicked, carefully handled, and shipped with care
-          to ensure freshness and quality. Whether you're a retailer,
-          wholesaler, or distributor, we offer reliable service and global reach
-          with every shipment.
+          {t("description")}
         </p>
       </div>
     </div>
