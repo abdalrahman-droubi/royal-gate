@@ -12,7 +12,7 @@ const Hero = ({ locale }: { locale: string }) => {
       {/* Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/assets/Strawberry.mp4"
+        src="https://media.istockphoto.com/id/1222819052/video/healthy-food-selection.mp4?s=mp4-640x640-is&k=20&c=Y0s4m_xbQxdMapCjy7PBe7RFH4ROJN0Lo3XWM8di5rI="
         autoPlay
         loop
         muted
