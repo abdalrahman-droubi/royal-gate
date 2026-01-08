@@ -20,19 +20,6 @@ const philosopher = Philosopher({
   weight: ["400", "700"],
 });
 
-// const merriweather = Merriweather({
-//   subsets: ["latin"],
-//   weight: ["400", "300", "700"],
-// });
-// const kalam = Kalam({
-//   subsets: ["latin"],
-//   weight: ["400", "300", "700"],
-// });
-// const roboto = Roboto({
-//   subsets: ["latin"],
-//   weight: ["400", "300", "100", "700", "900", "500"],
-// });
-
 export const metadata: Metadata = {
   title: "Royal Gate",
   description:

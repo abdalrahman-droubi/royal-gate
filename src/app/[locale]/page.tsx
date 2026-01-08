@@ -1,33 +1,38 @@
 "use client";
-import AboutUs from "@/components/AboutUs";
 import Hero from "@/components/Hero";
-import Products from "@/components/Products";
 import Navbar from "@/components/Navbar";
-import { useTranslations } from "next-intl";
-import Gallery from "@/components/Gallery";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
-import Organic from "@/components/Organic";
-import FeaturesSection from "@/components/FeaturesSection";
+import ServicesSection from "@/components/ServicesSection";
 import OurMission from "@/components/OurMission";
-import Lottie from "react-lottie";
+import Properties from "@/components/Properties";
+import AreasWeServe from "@/components/AreasWeServe";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import PropertyProcess from "@/components/PropertyProcess";
+import DubaiNeighborhoods from "@/components/DubaiNeighborhoods";
+import FAQ from "@/components/FAQ";
+import InvestmentOpportunities from "@/components/InvestmentOpportunities";
+import MarketInsights from "@/components/MarketInsights";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
+import Lottie from "react-lottie";
 import lottie from "@lottie/loading.json";
+
 export default function Home({
   params,
 }: Readonly<{
   params: { locale: string };
 }>) {
-  const translation = useTranslations("Navbar");
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 2000);
     AOS.init();
   }, []);
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -39,9 +44,7 @@ export default function Home({
 
   return (
     <>
-      {/* <section className="container-main"> */}
       <Navbar />
-      {/* </section> */}
 
       {isLoading ? (
         <div className="mt-28 h-[600px]">
@@ -57,29 +60,51 @@ export default function Home({
           <section id="home">
             <Hero locale={params.locale} />
           </section>
-          <FeaturesSection />
-          <section
-            id="features"
-            className="scroll-mt-20 container-main spacing-y-main"
-          ></section>
+
+          <section id="services" className="scroll-mt-20">
+            <ServicesSection />
+          </section>
+
           <section id="about" className="scroll-mt-20 container-main">
             <OurMission />
           </section>
-          <section id="products" className="scroll-mt-20 ">
-            <Products locale={params.locale} />
-          </section>
+
           <section className="scroll-mt-20">
-            <Organic />
+            <PropertyProcess />
           </section>
-          <section id="gallery" className="scroll-mt-20 container-main">
-            <Gallery />
-          </section>{" "}
-          <section id="ourMission" className="scroll-mt-20 container-main">
-            <AboutUs />
+
+          <section id="properties" className="scroll-mt-20">
+            <Properties locale={params.locale} />
           </section>
+
+          <section className="scroll-mt-20">
+            <DubaiNeighborhoods />
+          </section>
+
+          <section id="areas" className="scroll-mt-20">
+            <AreasWeServe />
+          </section>
+
+          <section className="scroll-mt-20">
+            <InvestmentOpportunities />
+          </section>
+
+          <section className="scroll-mt-20">
+            <WhyChooseUs />
+          </section>
+
+          <section className="scroll-mt-20">
+            <MarketInsights />
+          </section>
+
+          <section className="scroll-mt-20">
+            <FAQ />
+          </section>
+
           <section id="contact" className="scroll-mt-20 container-main">
             <ContactUs />
           </section>
+
           <Footer />
         </main>
       )}

@@ -9,9 +9,10 @@ import { Globe, Menu, X } from "lucide-react";
 const links = [
   { href: "home", label: "Home" },
   { href: "about", label: "About Us" },
-  { href: "products", label: "Products" },
+  { href: "services", label: "Services" },
+  { href: "properties", label: "Properties" },
+  { href: "areas", label: "Areas We Serve" },
   { href: "contact", label: "Contact Us" },
-  { href: "gallery", label: "Gallery" },
 ];
 
 const Navbar = () => {
@@ -51,8 +52,8 @@ const Navbar = () => {
           <div className="absolute left-0 py-2">
             <Image
               src={logo}
-              alt="Logo"
-              className="w-24 h-24  md:w-32 md:h-32 object-contain"
+              alt="Royal Gate Real Estate Logo"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
           </div>
 
@@ -63,7 +64,7 @@ const Navbar = () => {
                 <li key={`${href}${label}`}>
                   <button
                     onClick={() => handleScroll(href)}
-                    className="font-medium text-base text-gray-800 hover:text-gray-600 transition-colors"
+                    className="font-medium text-base text-gray-800 hover:text-[#286485] transition-colors"
                   >
                     {translation(label as any)}
                   </button>
@@ -75,11 +76,11 @@ const Navbar = () => {
           {/* Language Selector - Right */}
           <div className="absolute right-0 hidden md:flex items-center gap-2 text-gray-800">
             {locale === "en" ? (
-              <a href="/ar" className="hover:text-gray-600 transition-colors">
+              <a href="/ar" className="hover:text-[#286485] transition-colors">
                 <p>العربية</p>
               </a>
             ) : (
-              <a href="/en" className="hover:text-gray-600 transition-colors">
+              <a href="/en" className="hover:text-[#286485] transition-colors">
                 <p>English</p>
               </a>
             )}

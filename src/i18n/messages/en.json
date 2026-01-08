@@ -2,132 +2,282 @@
   "Navbar": {
     "Home": "Home",
     "About Us": "About Us",
-    "Products": "Products",
-    "Contact Us": "Contact Us",
-    "Gallery": "Gallery"
+    "Services": "Services",
+    "Properties": "Properties",
+    "Areas We Serve": "Areas We Serve",
+    "Contact Us": "Contact Us"
   },
   "Hero": {
-    "title": "Fresh Fruit Export Hub",
-    "subtitle": "Exporting top-quality fruits, vegetables, meats, and eggs from our farms to homes and businesses worldwide.",
-    "description": "Our products are handpicked, carefully handled, and shipped with care to ensure freshness and quality. Whether you're a retailer, wholesaler, or distributor, we offer reliable service and global reach with every shipment."
-  },
-  "FeaturesSection": {
-    "productForm": "Product Form",
-    "organicFarm": "Organic Farm",
-    "freeHome": "Free Home",
-    "delivery": "Delivery",
-    "promotionsOf": "Promotions Of",
-    "theWeek": "The week",
-    "discount": " discount",
-    "onAllVegetables": "On All Vegetables"
-  },
-  "AboutUs": {
-    "title": "Breaking News",
-    "subtitle": "Royal Gate General Trading has just expanded its operations to import even more premium, fresh fruits from trusted sources across the globe. The company is rapidly enhancing its distribution capabilities to serve retailers and major markets, ensuring an ever-growing selection of products tailored to meet the dynamic needs of today's customers.",
-    "subParagraph": "Freshly sourced from agricultural lands that continue to thrive",
-    "paragraph": "After centuries of cultivation, we’re proud to announce that our products are now being exported worldwide, ensuring that top-quality, fresh produce reaches every corner of the globe.",
-    "extraTitle": "New Developments: Sourcing the Freshest Fruits from Reliable Partners",
-    "extraParagraph": "With our enhanced distribution network, we’re now able to provide faster, more efficient service, bringing our premium fruits to markets worldwide.",
-    "contact": "Get in Touch with Us for More Information"
-  },
-  "Trending": {
-    "title": "Trending",
-    "Productss": "Our Featured Products",
-    "packedWithNutrients": "Packed with nutrients",
-    "buildsNaturalDefenses": "Builds natural defenses",
-    "supportsEcoFarming": "Supports eco-farming"
-  },
-  "FoodCategories": {
-    "Vegetable": "Vegetables",
-    "Fresh Fruit": "Fresh Fruit"
-  },
-  "products": {
-    "meatEggsTab": "Meat & Eggs",
-    "fruitsTab": "Fruits",
-    "vegetablesTab": "Vegetables",
-    "title": "Fresh & Organic",
-    "Productss": "Our Product ",
-    "orange": "Orange",
-    "lemon": "cucumber",
-    "mango": "Mango",
-    "strawberry": "Strawberry",
-    "pomegranate": "Pomegranate",
-    "tangerine": "Tangerine",
-    "banana": "Banana",
-    "grapes": "Grapes",
-    "peach": "Peach",
-    "apricot": "Apricot",
-    "tomato": "Tomato",
-    "garlic": "Lettuce",
-    "onion": "Onion",
-    "eggplant": "Avocado",
-    "watermelon": "Watermelon",
-    "melon": "Melon",
-    "guava": "Guava",
-    "Egg": "Egg",
-    "Meat": "Meat"
-  },
-  "Gallery": {
-    "gallery": "Gallery"
-  },
-  "Organic": {
-    "Title": "Why Choose Our Fresh Produce",
-    "Subtitle": "Packed with nature’s best nutrients for a healthy lifestyle",
-    "Items": {
-      "FruitTitle": "Fresh Organic Fruits",
-      "FruitDesc": "Enjoy the sweetness of nature with our hand-picked organic fruits, full of vitamins and antioxidants to boost your immunity.",
-      "GrapeTitle": "Naturally Sweet Grapes",
-      "GrapeDesc": "Our grapes are juicy, refreshing, and packed with natural sugar to give you energy without guilt.",
-      "CarrotTitle": "Crunchy Root Veggies",
-      "CarrotDesc": "Rich in fiber and beta-carotene, our root vegetables are great for digestion and glowing skin.",
-      "LeafTitle": "Leafy Greens for Vitality",
-      "LeafDesc": "Spinach, kale, and more! Our leafy greens are rich in iron and essential nutrients to fuel your body naturally."
-    }
-  },
-  "ContactUs": {
-    "GitIn": "Get In Touch",
-    "contactUs": "Contact Us",
-    "EmailAddress": "Email Address",
-    "PhoneNumber": "Phone Number",
-    "OfficeAddress": "Company Address",
-    "writeToUs": "WRITE TO US",
-    "visitUs": "VISIT US",
-    "callUs": "CALL US",
-    "detail": "UAE, Dubi"
-  },
-  "Footer": {
-    "AllRightsReserved": "All Rights Reserved"
+    "title": "Your Trusted Real Estate Partner in Dubai",
+    "subtitle": "Find Your Dream Property with Royal Gate Real Estate",
+    "description": "Expert property buying, selling, and leasing services across Dubai",
+    "stat1": "Professional Brokerage",
+    "stat2": "Prime Locations",
+    "stat3": "Trusted Service"
   },
   "Services": {
-    "sectionSubtitle": "Services",
-    "sectionTitle": "Welcome To Royal Gate",
-    "services": [
-      {
-        "title": "Always Fresh",
-        "description": "We care about what you eat and want to produce food which nourishes."
+    "sectionSubtitle": "What We Offer",
+    "sectionTitle": "Our Real Estate Services",
+    "services": {
+      "0": {
+        "title": "Property Sales",
+        "description": "Expert guidance in buying and selling residential and commercial properties across Dubai"
       },
-      {
-        "title": "100% Natural",
-        "description": "All our products are completely natural with no additives."
+      "1": {
+        "title": "Property Leasing",
+        "description": "Comprehensive leasing solutions for apartments, villas, and commercial spaces"
       },
-      {
-        "title": "Best Quality",
-        "description": "We maintain the highest quality standards in all our products."
+      "2": {
+        "title": "Property Management",
+        "description": "Full-service property management including maintenance and tenant relations"
       },
-      {
-        "title": "Food Safety",
-        "description": "Your safety is our priority in every step of production."
+      "3": {
+        "title": "Investment Consulting",
+        "description": "Strategic real estate investment advice for maximum returns in Dubai market"
       }
-    ]
+    }
   },
-  "tabs": {
-    "title": "About",
-    "about": "About",
+  "Mission": {
+    "title": "About Royal Gate Real Estate",
+    "subtitle": "Your trusted partner in Dubai's dynamic real estate market",
+    "about": "About Us",
     "mission": "Our Mission",
-    "goals": "Our Goals",
-    "readMore": "Read More",
-    "aboutContent": "Welcome to our export company! We specialize in providing fresh fruits, vegetables, eggs, and high-quality meat to international markets. With a commitment to excellence and sustainability, we ensure that every product meets the highest standards from farm to shipment. We collaborate with local farmers across various countries to ensure that every product is cultivated to the highest environmental and health standards. We also employ advanced packaging techniques to maintain product quality during transit. Through our dedication to sustainable practices and continuous innovation, we aim to protect the environment while promoting proper agricultural practices.",
-    "missionContent": "Our mission is to deliver premium agricultural products to the global market while supporting local farmers and promoting eco-friendly farming practices. We aim to build long-lasting partnerships through quality, transparency, and reliability. We believe in providing the global markets with high-quality agricultural products while adhering to sustainability principles. By employing the best modern farming techniques and paying attention to every detail of the production process, we seek to meet the needs of our clients while providing economic benefits to local communities and promoting food security. We believe that quality is the key to success and sustainable growth in the global market.",
-    "goalsContent": "We aim to expand our global reach, increase export volume, and continuously enhance the quality of our products. Our goals include establishing a strong logistics network, ensuring fresh and safe food delivery, and becoming a trusted name in agricultural exports. We are also focused on exploring new markets across the world and expanding our customer base. We are committed to continuous innovation in transportation and packaging technologies, ensuring that products remain in optimal condition throughout transit. By improving our logistics network and expanding our markets, we aim to be the leading company in agricultural exports, contributing to local economic growth and enhancing global food security."
+    "values": "Our Values",
+    "aboutContent": "Royal Gate Real Estate L.L.C is a leading real estate brokerage firm based in Dubai, specializing in property sales and leasing services. With our office strategically located in Al Baraha, we serve clients across Dubai's most prestigious neighborhoods.\n\nEstablished with a vision to provide exceptional real estate services, we have built a reputation for professionalism, integrity, and results-driven approach. Our team of experienced real estate professionals understands the nuances of Dubai's property market and is committed to helping clients achieve their real estate goals.",
+    "missionContent": "Our mission is to provide unparalleled real estate services that exceed client expectations. We strive to be the most trusted real estate partner in Dubai by delivering personalized solutions, market expertise, and exceptional customer service.\n\nWe are committed to helping our clients make informed decisions whether they are buying their dream home, investing in commercial properties, or seeking the perfect rental property. Our comprehensive approach ensures that every transaction is smooth, transparent, and successful.",
+    "valuesContent": "Integrity: We conduct all our business with the highest ethical standards\n\nExpertise: Our team brings deep knowledge of Dubai's real estate market\n\nClient-First Approach: Your satisfaction and success are our top priorities\n\nTransparency: We believe in clear, honest communication throughout every transaction\n\nExcellence: We are committed to delivering exceptional results in every interaction",
+    "yearsExperience": "Years of Experience",
+    "happyClients": "Happy Clients",
+    "propertiesListed": "Properties Listed",
+    "satisfaction": "Client Satisfaction"
+  },
+  "PropertyProcess": {
+    "subtitle": "Simple & Transparent",
+    "title": "How We Work With You",
+    "description": "Our streamlined process ensures a smooth and successful property transaction from start to finish",
+    "step1": {
+      "title": "Property Search & Selection",
+      "description": "We listen to your requirements and preferences to identify properties that match your needs. Our extensive network gives you access to exclusive listings across Dubai's best neighborhoods."
+    },
+    "step2": {
+      "title": "Property Viewing & Evaluation",
+      "description": "We arrange convenient property viewings and provide detailed market analysis, helping you understand the true value and potential of each property."
+    },
+    "step3": {
+      "title": "Negotiation & Documentation",
+      "description": "Our experienced team handles all negotiations on your behalf and manages the complete documentation process, ensuring all legal requirements are met."
+    },
+    "step4": {
+      "title": "Closing & Handover",
+      "description": "We coordinate the final steps of your transaction, from payment processing to key handover, ensuring a seamless transition to your new property."
+    }
+  },
+  "Properties": {
+    "subtitle": "Featured Listings",
+    "title": "Explore Our Premium Properties",
+    "forSale": "For Sale",
+    "forRent": "For Rent",
+    "contact": "Contact",
+    "viewAllProperties": "View All Properties",
+    "property1": { "title": "Luxury Apartment in Downtown" },
+    "property2": { "title": "Modern Studio in Marina" },
+    "property3": { "title": "Beachfront Villa" },
+    "property4": { "title": "Office Space in Business Bay" },
+    "property5": { "title": "Penthouse with Sea View" },
+    "property6": { "title": "Family Villa with Garden" }
+  },
+  "Neighborhoods": {
+    "subtitle": "Discover Dubai",
+    "title": "Popular Neighborhoods",
+    "description": "Explore Dubai's most sought-after areas where we have extensive property listings",
+    "properties": "Properties",
+    "exploreButton": "Explore Properties",
+    "area1": {
+      "name": "Downtown Dubai",
+      "description": "The heart of the city with iconic landmarks and luxury living"
+    },
+    "area2": {
+      "name": "Dubai Marina",
+      "description": "Waterfront living with stunning views and vibrant lifestyle"
+    },
+    "area3": {
+      "name": "Palm Jumeirah",
+      "description": "Exclusive island living with pristine beaches and luxury villas"
+    },
+    "area4": {
+      "name": "Business Bay",
+      "description": "Dubai's commercial hub with modern apartments and offices"
+    },
+    "area5": {
+      "name": "Jumeirah Beach Residence",
+      "description": "Beachfront community with world-class amenities"
+    },
+    "area6": {
+      "name": "Arabian Ranches",
+      "description": "Family-friendly community with golf course and parks"
+    }
+  },
+  "Areas": {
+    "title": "Where We Serve",
+    "subtitle": "Based in Al Baraha with comprehensive real estate services across Dubai",
+    "officeLocation": "Our Office Location",
+    "commercialProperties": "Commercial Properties",
+    "commercialDesc": "Office spaces, retail units, and business premises",
+    "residentialProperties": "Residential Properties",
+    "residentialDesc": "Apartments, villas, townhouses, and luxury homes",
+    "leasingServices": "Leasing Services",
+    "leasingDesc": "Professional property leasing and rental management",
+    "coverageTitle": "Serving All of Dubai",
+    "coverageDesc": "From our office in Al Baraha, we provide expert real estate brokerage services throughout Dubai's residential and commercial districts.",
+    "service1": "Property buying and selling across Dubai",
+    "service2": "Residential and commercial leasing",
+    "service3": "Property management and consultation",
+    "service4": "Investment opportunities and market analysis",
+    "callNow": "Call Us Now",
+    "visitOffice": "Visit Our Office"
+  },
+  "Investment": {
+    "subtitle": "Smart Investment",
+    "title": "Real Estate Investment Opportunities in Dubai",
+    "description": "Dubai's real estate market offers exceptional returns with strategic investment opportunities across residential and commercial sectors",
+    "opportunity1": {
+      "title": "High Rental Yields",
+      "description": "Dubai offers some of the highest rental yields in the world, with returns averaging 5-8% annually across prime locations"
+    },
+    "opportunity2": {
+      "title": "Tax-Free Income",
+      "description": "Benefit from Dubai's tax-free environment with no property tax, capital gains tax, or income tax on rental income"
+    },
+    "opportunity3": {
+      "title": "Capital Appreciation",
+      "description": "Strategic locations show consistent property value growth, offering strong potential for long-term capital appreciation"
+    },
+    "opportunity4": {
+      "title": "Golden Visa Eligibility",
+      "description": "Property investments above AED 2 million qualify for UAE's long-term residency visa program"
+    },
+    "stat1": "Average ROI",
+    "stat2": "Years Track Record",
+    "stat3": "Strong Returns",
+    "stat4": "Expert Support",
+    "ctaTitle": "Start Your Investment Journey Today",
+    "ctaDescription": "Our investment specialists will guide you through the entire process, from market analysis to property acquisition and management",
+    "scheduleConsultation": "Schedule Free Consultation"
+  },
+  "WhyChooseUs": {
+    "subtitle": "Your Trusted Partner",
+    "title": "Why Choose Royal Gate Real Estate",
+    "description": "With our licensed brokerage services and deep understanding of Dubai's real estate market, we provide exceptional service to help you achieve your property goals.",
+    "feature1": {
+      "title": "Licensed & Certified",
+      "description": "Fully licensed by Dubai Department of Economy & Tourism with license #1374839"
+    },
+    "feature2": {
+      "title": "Expert Knowledge",
+      "description": "Deep understanding of Dubai's property market and regulations"
+    },
+    "feature3": {
+      "title": "Personalized Service",
+      "description": "Dedicated attention to your unique property requirements"
+    },
+    "feature4": {
+      "title": "Market Insights",
+      "description": "Access to exclusive listings and market intelligence"
+    },
+    "benefitsTitle": "What You Get With Us",
+    "benefit1": "Professional guidance throughout the entire buying or selling process",
+    "benefit2": "Access to exclusive property listings across Dubai",
+    "benefit3": "Expert negotiation to get you the best deal",
+    "benefit4": "Complete transparency in all transactions",
+    "benefit5": "Comprehensive market analysis and property valuation",
+    "benefit6": "Post-sale support and property management services",
+    "imageTitle": "Serving Dubai's Real Estate Market",
+    "imageSubtitle": "From residential apartments to commercial spaces",
+    "ctaTitle": "Ready to Find Your Perfect Property?",
+    "ctaDescription": "Contact us today for a free consultation. Our expert team is ready to help you navigate Dubai's real estate market.",
+    "whatsapp": "Chat on WhatsApp",
+    "visitOffice": "Visit Our Office",
+    "stat1Value": "Licensed",
+    "stat1Label": "Official Broker",
+    "stat2Value": "Dubai",
+    "stat2Label": "Wide Coverage",
+    "stat3Value": "Expert",
+    "stat3Label": "Consultation",
+    "stat4Value": "100%",
+    "stat4Label": "Transparency"
+  },
+  "Insights": {
+    "subtitle": "Market Updates",
+    "title": "Latest Market Insights & News",
+    "description": "Stay informed with the latest trends, news, and insights from Dubai's real estate market",
+    "insight1": {
+      "date": "January 2026",
+      "title": "Dubai Real Estate Market Shows Strong Growth in 2026",
+      "excerpt": "The Dubai property market continues its upward trajectory with increased demand across residential and commercial sectors, driven by economic growth and investor confidence.",
+      "category": "Market Trends"
+    },
+    "insight2": {
+      "date": "December 2025",
+      "title": "Investment Opportunities in Emerging Dubai Neighborhoods",
+      "excerpt": "New development areas are offering excellent investment potential with attractive prices and promising future returns as infrastructure projects progress.",
+      "category": "Investment Guide"
+    },
+    "insight3": {
+      "date": "December 2025",
+      "title": "Understanding Dubai's Property Ownership Laws",
+      "excerpt": "A comprehensive guide to property ownership regulations in Dubai, including freehold areas, leasehold options, and requirements for foreign investors.",
+      "category": "Buyer's Guide"
+    },
+    "learnMore": "Learn More"
+  },
+  "FAQ": {
+    "subtitle": "Common Questions",
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about buying, selling, and renting properties in Dubai",
+    "imageTitle": "Need More Information?",
+    "imageDescription": "Our expert team is here to answer all your questions about Dubai's real estate market",
+    "faq1": {
+      "question": "Can foreigners buy property in Dubai?",
+      "answer": "Yes, foreigners can purchase property in designated freehold areas across Dubai. These include popular locations such as Downtown Dubai, Dubai Marina, Palm Jumeirah, and many other prime areas. Property ownership in these zones comes with full ownership rights."
+    },
+    "faq2": {
+      "question": "What are the costs involved in buying property?",
+      "answer": "When buying property in Dubai, you should budget for: Dubai Land Department (DLD) transfer fee (4% of property value), real estate agent commission (typically 2% + VAT), mortgage registration fee (if applicable), and property valuation fee. Our team provides a detailed breakdown of all costs involved."
+    },
+    "faq3": {
+      "question": "How long does the property buying process take?",
+      "answer": "The typical property purchase process in Dubai takes 2-4 weeks from offer acceptance to completion. This includes property viewing, offer negotiation, NOC (No Objection Certificate) from developer, mortgage approval (if applicable), and final transfer at Dubai Land Department."
+    },
+    "faq4": {
+      "question": "What is the average rental yield in Dubai?",
+      "answer": "Dubai offers attractive rental yields, typically ranging from 5-8% annually depending on the location and property type. Prime locations like Downtown Dubai and Dubai Marina often provide yields between 5-6%, while emerging areas can offer even higher returns."
+    },
+    "faq5": {
+      "question": "Do I need to pay property tax in Dubai?",
+      "answer": "No, there is no property tax, capital gains tax, or income tax on rental income in Dubai. Property owners only pay an annual service charge for maintenance of common areas, and a 5% municipality tax on rental income (paid by tenants through DEWA bills)."
+    },
+    "faq6": {
+      "question": "What documents do I need to buy property in Dubai?",
+      "answer": "Required documents include: Valid passport copy, valid UAE visa/residence permit (or entry stamp for non-residents), Emirates ID (for residents), proof of income or bank statements (for mortgage), and NOC from developer (for resale properties). We guide you through the complete documentation process."
+    },
+    "contactPrompt": "Still have questions? Our team is ready to help you.",
+    "contactButton": "Contact Us Now"
+  },
+  "ContactUs": {
+    "contactUs": "Get in Touch",
+    "contactSubtitle": "We're here to help you find your perfect property in Dubai",
+    "OfficeAddress": "Office Address",
+    "PhoneNumber": "Phone Numbers",
+    "EmailAddress": "Email Address",
+    "BusinessHours": "Business Hours",
+    "whatsappContact": "Chat on WhatsApp",
+    "licensedBroker": "Licensed & Registered Broker",
+    "licenseNumber": "License Number",
+    "registerNumber": "Register Number",
+    "dcciMembership": "DCCI Membership",
+    "licensedByDet": "Licensed by Department of Economy & Tourism, Dubai"
+  },
+  "Footer": {
+    "AllRightsReserved": "Royal Gate Real Estate L.L.C. All Rights Reserved"
   }
 }
