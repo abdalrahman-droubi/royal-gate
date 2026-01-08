@@ -9,7 +9,7 @@ const PropertyProcess = () => {
   const steps = [
     {
       number: "01",
-      icon: <Search className="w-10 h-10" />,
+      icon: <Search className="w-8 h-8 md:w-10 md:h-10" />,
       title: t("step1.title"),
       description: t("step1.description"),
       image:
@@ -17,7 +17,7 @@ const PropertyProcess = () => {
     },
     {
       number: "02",
-      icon: <FileText className="w-10 h-10" />,
+      icon: <FileText className="w-8 h-8 md:w-10 md:h-10" />,
       title: t("step2.title"),
       description: t("step2.description"),
       image:
@@ -25,7 +25,7 @@ const PropertyProcess = () => {
     },
     {
       number: "03",
-      icon: <Handshake className="w-10 h-10" />,
+      icon: <Handshake className="w-8 h-8 md:w-10 md:h-10" />,
       title: t("step3.title"),
       description: t("step3.description"),
       image:
@@ -33,7 +33,7 @@ const PropertyProcess = () => {
     },
     {
       number: "04",
-      icon: <Key className="w-10 h-10" />,
+      icon: <Key className="w-8 h-8 md:w-10 md:h-10" />,
       title: t("step4.title"),
       description: t("step4.description"),
       image:
@@ -45,38 +45,40 @@ const PropertyProcess = () => {
     <section className="spacing-y-main bg-white">
       <div className="container-main">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-[#286485] text-2xl font-medium mb-2">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-[#286485] text-xl md:text-2xl font-medium mb-2">
             {t("subtitle")}
           </h2>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-3 md:mb-4 px-4">
             {t("title")}
           </h1>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+          <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto px-4">
             {t("description")}
           </p>
         </div>
 
         {/* Steps */}
-        <div className="space-y-16">
+        <div className="space-y-12 md:space-y-16">
           {steps.map((step, index) => (
             <div
               key={index}
               className={`flex flex-col ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-              } gap-8 items-center`}
+              } gap-6 md:gap-8 items-center`}
             >
               {/* Image */}
-              <div className="lg:w-1/2">
-                <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
+              <div className="w-full lg:w-1/2">
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] rounded-xl md:rounded-2xl overflow-hidden shadow-lg md:shadow-xl">
                   <Image
                     src={step.image}
                     alt={step.title}
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
                   />
-                  <div className="absolute top-6 left-6 bg-white rounded-full w-20 h-20 flex items-center justify-center shadow-lg">
-                    <span className="text-3xl font-bold text-[#286485]">
+                  {/* Number Badge */}
+                  <div className="absolute top-4 left-4 md:top-6 md:left-6 bg-white rounded-full w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 flex items-center justify-center shadow-lg">
+                    <span className="text-2xl md:text-2xl lg:text-3xl font-bold text-[#286485]">
                       {step.number}
                     </span>
                   </div>
@@ -84,14 +86,19 @@ const PropertyProcess = () => {
               </div>
 
               {/* Content */}
-              <div className="lg:w-1/2">
-                <div className="bg-[#286485] text-white rounded-full w-16 h-16 flex items-center justify-center mb-4">
+              <div className="w-full lg:w-1/2 px-4 md:px-0">
+                {/* Icon */}
+                <div className="bg-[#286485] text-white rounded-full w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center mb-3 md:mb-4">
                   {step.icon}
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+
+                {/* Title */}
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 mb-3 md:mb-4">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 text-lg leading-relaxed">
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm md:text-base lg:text-lg leading-relaxed">
                   {step.description}
                 </p>
               </div>
